@@ -78,17 +78,204 @@
                 <h2 class="animate-on-scroll">Inteligencia que Impulsa el <span>Crecimiento</span></h2>
 
                 <!-- Nuevo Dashboard Interactivo con JS -->
-                <div class="dashboard-embed-container animate-on-scroll">
-                    <div class="dashboard-grid">
-                        <div class="chart-container full-width">
-                            <canvas id="salesChart"></canvas>
+                <!-- Nuevo Dashboard Interactivo con JS - Estilo Futurista -->
+                <div class="dashboard-wrapper animate-on-scroll">
+                    <!-- Panel Superior: Estadísticas Rápidas -->
+                    <div class="dash-top-stats">
+                        <div class="stat-card glass-panel">
+                            <div class="stat-header">
+                                <span>NISI</span>
+                                <span class="stat-value-sm">60%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
                         </div>
-                        <div class="chart-container">
-                            <canvas id="usersChart"></canvas>
+                        <div class="stat-card glass-panel">
+                            <div class="stat-header">
+                                <span>ELIT</span>
+                                <span class="stat-value-sm">45%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%;"></div>
+                            </div>
                         </div>
-                        <div class="chart-container">
-                            <canvas id="projectsChart"></canvas>
+                        <div class="stat-card glass-panel">
+                            <div class="stat-header">
+                                <span>ESSE</span>
+                                <span class="stat-value-sm">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%;"></div>
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="dashboard-grid-v2">
+                        <!-- Columna Izquierda: Gráfico de Líneas Grande -->
+                        <div class="grid-item item-main-chart glass-panel">
+                            <div class="panel-header">
+                                <h4>PROYECCIÓN 2021-2025</h4>
+                            </div>
+                            <div class="chart-wrapper">
+                                <canvas id="mainAreaChart"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- Columna Central: Gráfico de Ondas (Mock) + Stats -->
+                        <div class="grid-item item-wave glass-panel">
+                            <div class="panel-header">
+                                <h4 id="live-counter-1">1065</h4>
+                                <div class="status-dot"></div>
+                            </div>
+                            <div class="chart-wrapper small-wave">
+                                <canvas id="waveChart"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- Columna Derecha / Superior: Histograma -->
+                        <div class="grid-item item-histogram glass-panel">
+                            <div class="panel-header">
+                                <h4>ACTIVIDAD EN TIEMPO REAL</h4>
+                            </div>
+                            <div class="chart-wrapper">
+                                <canvas id="histogramChart"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- Segunda Fila: Barras Laterales -->
+                        <div class="grid-item item-bars glass-panel">
+                            <div class="bar-row">
+                                <span class="label">CILLUM</span>
+                                <div class="bar-visual">
+                                    <div class="bar-segment active"></div>
+                                    <div class="bar-segment active"></div>
+                                    <div class="bar-segment active"></div>
+                                    <div class="bar-segment"></div>
+                                    <div class="bar-segment"></div>
+                                </div>
+                                <span class="value">32%</span>
+                            </div>
+                            <div class="bar-row">
+                                <span class="label">MOLLIT</span>
+                                <div class="bar-visual">
+                                    <div class="bar-segment active"></div>
+                                    <div class="bar-segment active"></div>
+                                    <div class="bar-segment active"></div>
+                                    <div class="bar-segment active"></div>
+                                    <div class="bar-segment"></div>
+                                </div>
+                                <span class="value">48%</span>
+                            </div>
+                            <div class="bar-row">
+                                <span class="label">FUGIAT</span>
+                                <div class="bar-visual">
+                                    <div class="bar-segment active"></div>
+                                    <div class="bar-segment active"></div>
+                                    <div class="bar-segment active"></div>
+                                    <div class="bar-segment active"></div>
+                                    <div class="bar-segment active"></div>
+                                </div>
+                                <span class="value">63%</span>
+                            </div>
+                        </div>
+
+                        <!-- Segunda Fila: Calendario / Tabla -->
+                        <div class="grid-item item-calendar glass-panel">
+                            <div class="panel-header">
+                                <h4>CALENDARIO</h4>
+                            </div>
+                            <div class="calendar-grid">
+                                <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+                                <span class="day muted">28</span><span class="day muted">29</span><span
+                                    class="day muted">30</span><span class="day">1</span><span class="day">2</span><span
+                                    class="day">3</span><span class="day">4</span>
+                                <span class="day">5</span><span class="day">6</span><span class="day">7</span><span
+                                    class="day">8</span><span class="day">9</span><span class="day">10</span><span
+                                    class="day">11</span>
+                                <span class="day">12</span><span class="day">13</span><span class="day">14</span><span
+                                    class="day">15</span><span class="day">16</span><span class="day">17</span><span
+                                    class="day">18</span>
+                                <span class="day">19</span><span class="day">20</span><span class="day">21</span><span
+                                    class="day">22</span><span class="day active">23</span><span
+                                    class="day">24</span><span class="day">25</span>
+                                <span class="day">26</span><span class="day">27</span><span class="day">28</span><span
+                                    class="day">29</span><span class="day">30</span><span
+                                    class="day muted">1</span><span class="day muted">2</span>
+                            </div>
+                        </div>
+
+                        <!-- Segunda Fila: Mapa (Reemplazo con Gráfico Horizontal) -->
+                        <div class="grid-item item-map glass-panel">
+                            <div class="panel-header">
+                                <h4>TRÁFICO REGIONAL</h4> <span>• 648 Activos</span>
+                            </div>
+                            <div class="chart-wrapper">
+                                <canvas id="mapReplacementChart"></canvas>
+                            </div>
+                            <div class="map-stats">
+                                <span>● NISI 87%</span>
+                                <span>● ELIT 54%</span>
+                            </div>
+                        </div>
+
+                        <!-- Tercera Fila: Donas -->
+                        <div class="grid-item item-donuts glass-panel">
+                            <div class="donut-flex">
+                                <div class="donut-wrapper">
+                                    <canvas id="gauge1"></canvas>
+                                    <div class="donut-inner">478</div>
+                                    <span class="donut-label">LOREM</span>
+                                </div>
+                                <div class="donut-wrapper">
+                                    <canvas id="gauge2"></canvas>
+                                    <div class="donut-inner">618</div>
+                                    <span class="donut-label">IPSUM</span>
+                                </div>
+                                <div class="donut-wrapper">
+                                    <canvas id="gauge3"></canvas>
+                                    <div class="donut-inner">521</div>
+                                    <span class="donut-label">DOLOR</span>
+                                </div>
+                            </div>
+                            <div class="mini-text-block">
+                                <p>Sit amet consectetur adipiscing elit sed.</p>
+                            </div>
+                        </div>
+
+                        <!-- Tercera Fila: Barras Verticales -->
+                        <div class="grid-item item-bottom-bars glass-panel">
+                            <div class="panel-header">
+                                <div class="status-dot blue"></div>
+                                <h4 id="live-counter-2">1047</h4>
+                            </div>
+                            <div class="chart-wrapper">
+                                <canvas id="verticalBarsChart"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- Tercera Fila: KPIs Circulares Grandes -->
+                        <div class="grid-item item-kpi-circles glass-panel">
+                            <div class="kpi-flex">
+                                <div class="kpi-circle">
+                                    <div class="circle-val">136</div>
+                                    <div class="circle-label">MAGNA</div>
+                                </div>
+                                <div class="kpi-circle active">
+                                    <div class="circle-val">459</div>
+                                    <div class="circle-label">VELIT</div>
+                                </div>
+                                <div class="kpi-circle">
+                                    <div class="circle-val">357</div>
+                                    <div class="circle-label">DOLOR</div>
+                                </div>
+                                <div class="kpi-circle">
+                                    <div class="circle-val">563</div>
+                                    <div class="circle-label">CULPA</div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
